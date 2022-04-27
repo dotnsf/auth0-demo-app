@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         {!isAuthenticated ? (
-          <button onClick={loginWithRedirect}>Login</button>
+          <button onClick={loginWithRedirect}>LOGIN</button>
         ) : (
           <button onClick={() => {
             logout( { returnTo: window.location.origin } );
-          }}>Logout</button>
+          }}>LOGOUT</button>
         )}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
